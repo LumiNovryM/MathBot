@@ -11,7 +11,7 @@ while(ulangi == true){
 
 
     // Menyesuaikan pilihan user 
-    if(pilih == "persegi" || pilih == "Persegi"){
+    if(pilih == "Persegi" || pilih == "persegi"){
         // user menentukan jenis 
         let jenis = prompt("Apa yang ingin anda hitung? \nLuas atau Keliling?")
         if(jenis == "luas" || jenis == "Luas"){
@@ -23,7 +23,7 @@ while(ulangi == true){
             hasil = sisi * 4;
             alert("Hasil Keliling dari persegi adalah " + hasil)
         }
-    }else if(pilih == "segitiga" || pilih == "Segitiga"){
+    }else if(pilih == "Segitiga" || pilih == "segitiga"){
         let jenis = prompt("Apa yang ingin anda hitung? \nLuas atau Keliling?")
         if(jenis == "Luas" || jenis == "luas"){
             let tinggi = prompt("Masukkan tinggi segitiga");
@@ -50,6 +50,42 @@ while(ulangi == true){
             hasil = 2 * (Number(luas) + Number(panjang));
             alert("Hasil Keliling dari persegi panjang adalah " + hasil)
         }
+    }else if(pilih == "Lingkaran" || pilih == "lingkaran"){
+        let jenis = prompt("Apa yang ingin anda hitung? \nLuas atau Keliling?")
+        if(jenis == "Luas" || jenis == "luas"){
+            let jari = prompt("Masukkan Jari-Jari")
+            if(jari % 7 == 0){
+                phi = 22/7
+            }else{
+                phi = 3,14
+            }
+            hasil = phi * Number(jari) * Number(jari)
+            alert("Hasil Luas dari Lingkaran adalah " + hasil)
+        }else{
+            let jari = prompt("Masukkan Jari-Jari")
+            if(jari % 7 == 0){
+                phi = 22/7
+            }else{
+                phi = 3,14
+            }
+            hasil = 2 * phi * Number(jari)
+            alert("Hasil Keliling dari Lingkaran adalah " + hasil)
+        }
+    }else if(pilih == "Jajar Genjang" || pilih == "jajar genjang" || pilih == "Jajar genjang" || pilih == "jajar Genjang"){
+        let jenis = prompt("Apa yang ingin anda hitung? \nLuas atau Keliling?")
+        if(jenis == "Luas" || jenis == "luas"){
+            let alas = prompt("Masukkan Alas")
+            let tinggi = prompt("Masukkan Tinggi")
+            hasil  = Number(alas) * Number(tinggi)
+            alert("Hasil Luas dari Jajar Genjang adalah " + hasil)
+        }else{
+            let alas = prompt("Masukkan Alas")
+            let tinggi = prompt("Masukkan Tinggi")
+            hasil = 2 * (Number(alas) + Number(tinggi))
+            alert("Hasil Keliling dari Jajar Genjang adalah " + hasil) 
+        }
+    }else{
+        alert("Bangun Ruang Tidak Tersedia")
     }
 
     ulangi = confirm("Ingin Menghitung Bangun Datar yang lain?")    
