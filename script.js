@@ -37,13 +37,13 @@ while(ulangi == true){
             hasil = Number(sisi_a) + Number(sisi_b) + Number(sisi_c);
             alert("Hasil Keliling dari Segitiga adalah " + hasil)
         }
-    }else{
+    }else if(pilih == "Persegi Panjang" || pilih == "persegi panjang"){
         let jenis = prompt("Apa yang ingin anda hitung? \nLuas atau Keliling?")
         if(jenis == "Luas" || jenis == "luas"){
             let luas = prompt("Masukkan luas");
             let panjang = prompt("Masukkan keliling");
             hasil = luas * panjang;
-            alert("Hasil Luas dari persegi adalah " + hasil)
+            alert("Hasil Luas dari persegi panjang adalah " + hasil)
         }else{
             let luas = prompt("Masukkan luas");
             let panjang = prompt("Masukkan keliling");
