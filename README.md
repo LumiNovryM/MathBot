@@ -12,4 +12,4 @@ Lingkaran (Luas & Keliling)
 
 Jajargenjang (Luas & Keliling)
 
-MathBot Beta Version 1.1
+MathBot Version 1.1
